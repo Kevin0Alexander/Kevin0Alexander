@@ -19,8 +19,11 @@ let tableBody = '';
 // crear una tabla para los elementos de esas categorias: se genera una tabla por cada categoria (primero se define el encabezado de la tabla <th>foto</th><th>Description</th<th>Precio</th>).
 
 category.items.forEach (item =>{
-    tableBody+=`<tr
-    
-}
+   tableBody +=`1<tr>
+               <td><img scr="${item.image} alt="${item.name}
+               <td>${item.name} - "${item.description}"</td>
+               <td>${item.precio}</td>
+            </tr>`;
+       })
 });
 })
